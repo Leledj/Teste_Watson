@@ -46,6 +46,12 @@ docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
 ""
 Trocando o some-mysql pelo nome do seu docker e my-secret-pw pelo password do mysql.
 
+No caso tenho um docker do nodeJS criado onde precisa apenas que altere o diretório para o caminho certo do Dockerfile e apenas rodar o comando:
+""
+docker-compose up
+""
+Ele irá subir um docker com nodeJS rodando na porta 8081 que foi escolhida para essa aplicação.
+
 Oque está faltando concluir:
 Temos a credencial do Watson baixada, porém não foi criado a função para consumir.
 Não foi feito o css da página ainda.
