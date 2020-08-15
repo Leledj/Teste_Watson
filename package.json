@@ -4,7 +4,8 @@
   "description": "adicionar um comentario e fazer a leitura com api watson",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
   "author": "Leandro Diniz de Jesus",
   "license": "ISC",
@@ -14,6 +15,7 @@
     "express": "^4.17.1",
     "ibm-watson": "^5.6.2",
     "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
     "sequelize": "^6.3.4"
   }
 }

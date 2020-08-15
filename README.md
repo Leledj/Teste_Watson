@@ -82,6 +82,18 @@ No caso a porta escolhida pode ser alterado no arquivo app.js
 Fiz de um modo que toda vez que inserimos um comentário, ao clicar no botão submit ele alimenta o banco de dados e trás essas informações embaixo da tela com um botão.
 Nesse botão é onde colocaremos o Watson para fazer a leitura do texto.
 
+Caso não queira instalar o mysql na maquina, existe a opção de rodar um docker, entra no site do docker baixa ele e cria o docker do mysql com o comando:
+""
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql
+""
+Trocando o some-mysql pelo nome do seu docker e my-secret-pw pelo password do mysql.
+
+No caso tenho um docker do nodeJS criado onde precisa apenas que altere o diretório para o caminho certo do Dockerfile e apenas rodar o comando:
+""
+docker-compose up
+""
+Ele irá subir um docker com nodeJS rodando na porta 8081 que foi escolhida para essa aplicação.
+
 Oque está faltando concluir:
 Temos a credencial do Watson baixada, porém não foi criado a função para consumir.
 Não foi feito o css da página ainda.
