@@ -10,15 +10,15 @@ const textToSpeech = new TextToSpeechV1({
 });
 
 var params = {
-    text: '',
+    text: 'Hello world',
     voice: 'pt-BR_IsabelaVoice',
 };
 
-$("#btn-ouvir").Click(function(event){
-    textToSpeech.synthesize({
-        text: 'Ola, boa tarde!',
-        voice: 'pt-BR_IsabelaVoice',
-    }).on('error', function(error){
-        console.log('Error:',error);
+
+$(document).ready(function(){
+    $('#btn-ouvir').Click(function(event){
+        textToSpeech.synthesize(params).catch(err => {
+            console.log('Error:',error);
+        })
     })
-});
+})
