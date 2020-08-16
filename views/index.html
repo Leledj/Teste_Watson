@@ -14,22 +14,25 @@
  
 <body> 
   <div class="container"> 
-  <div class="col-sm-4">
-    <h3>NodeJS/AJAX/MySQL</h3>
-    <div style="display: inline-block;">    
-      <form id="comentarioForm">
-        <div class="form-group">
-        <label for="comentario">Comentario:</label>
-        <input type="textarea" class="form-control" id="comentario" />
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-    </div>
-    <div style="display: inline-block;">
-      <div id="getResultDiv">    
+    <div class="row">
+      <div class="col-xs-6">    
+        <form id="comentarioForm">
+          <div class="form-group">
+          <label for="comentario">Comentario:</label>
+          <input type="textarea" class="form-control" id="comentario" style="height: 100px;" rows="100"/>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
       </div>
-    </div>
-  </div>  
+      <div class="col-xs-6" >
+        <div class="container">
+          <div class="row">
+          <div id="getResultDiva" class="col-md-3"></div>
+          <div id="getResultDivb" class="col-sm-1"></div>
+        </div>
+      </div>
+      </div>
+    </div>  
   </div>
 </body>
 </html>
