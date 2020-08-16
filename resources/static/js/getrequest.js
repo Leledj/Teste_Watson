@@ -13,8 +13,8 @@ $( document ).ready(function() {
         $('#getResultDiv ul').empty();
         var custList = "";
         $.each(result, function(i, coments){
-          $('#getResultDiv ').append('<p>' + coments.comentario + " " + '<br>'+ '</p>')
-          $('#getResultDiv').append('<button id="ouvir" type="button" class="btn btn-default">ouvir</button>')
+          $('#getResultDiva ').append( + '<p>' + coments.comentario + " " + '<br>'+ '</p>' )
+          $('#getResultDivb').append('<button id="ouvir" type="button" class="btn btn-default" >ouvir</button>')
         });
         console.log("Success: ", result);
       },
